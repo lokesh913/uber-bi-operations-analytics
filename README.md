@@ -11,16 +11,6 @@ Powered by a robust dataset of **150,000 bookings** spanning the year 2025, this
 
 ---
 
-## 📸 Dashboard Preview
-
-Below is the visual layout of the interactive Uber BI Dashboard, designed with a premium, state-of-the-art dark glassmorphism theme, harmonious custom color palettes, dynamic hover effects, and a collapsible layout.
-
-![Uber BI Dashboard Mockup Overview](./assets/dashboard_screenshot.jpg)
-
-*(The above image represents the customized background visual design system custom-tailored for this multi-page dashboard, ensuring a clean, modern aesthetic, and perfect visual grid spacing).*
-
----
-
 ## 📌 Table of Contents
 1. [📊 Dashboard Architecture & Page-by-Page Breakdown](#-dashboard-architecture--page-by-page-breakdown)
 2. [📁 Dataset Profile & Database Schema](#-dataset-profile--database-schema)
