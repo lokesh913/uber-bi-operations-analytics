@@ -1,0 +1,22 @@
+# System files
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.log
+
+# Office temporary files
+~$*.docx
+~$*.xlsx
+
+# Python temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local configuration files
+.vscode/
+.idea/
+.project
+.settings/

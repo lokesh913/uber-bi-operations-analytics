@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber BI Operational & Financial Analytics Hub</title>
+    <!-- Modern Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="glass-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-taxi logo-icon"></i>
+                <span>Uber<span class="highlight">Analytics</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#hero"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#dashboard"><i class="fa-solid fa-chart-pie"></i> Live Dashboard</a>
+                <a href="#insights"><i class="fa-solid fa-lightbulb"></i> Key Insights</a>
+                <a href="#schema"><i class="fa-solid fa-database"></i> Schema</a>
+                <a href="#download" class="btn-primary"><i class="fa-solid fa-download"></i> Get Files</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="badge"><i class="fa-solid fa-bolt"></i> Production-Grade BI Project</span>
+                <h1>Interactive Uber <br><span class="gradient-text">Operations & Revenue</span> Hub</h1>
+                <p class="hero-desc">
+                    An elite data analytics solution tracking <strong>150,000 rides</strong> in 2025. Powered by a 6-page interactive dashboard detailing KPIs, operational driver/rider friction points, fleet utilization, and geographical demand waves.
+                </p>
+                <div class="hero-actions">
+                    <a href="#dashboard" class="btn-glow"><i class="fa-solid fa-play"></i> Launch Interactive Report</a>
+                    <a href="#insights" class="btn-secondary"><i class="fa-solid fa-chart-line"></i> View Analysis Report</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card glass">
+                    <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <h3>150K</h3>
+                    <p>Total Ride Bookings</p>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-icon"><i class="fa-solid fa-circle-check"></i></div>
+                    <h3>62%</h3>
+                    <p>Ride Completion Rate</p>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3>18%</h3>
+                    <p>Driver Cancellations</p>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-icon"><i class="fa-solid fa-credit-card"></i></div>
+                    <h3>45%</h3>
+                    <p>UPI Transaction Share</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Dashboard Section -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Interactive Report Workspace</span>
+                <h2>Live Power BI Workspace</h2>
+                <p>Interact with the live dashboard, apply slicers, toggle pages, and drill down into the ride operational data 24/7.</p>
+            </div>
+            
+            <div class="dashboard-wrapper glass">
+                <div class="dashboard-bar">
+                    <div class="bar-circles">
+                        <span class="circle red"></span>
+                        <span class="circle yellow"></span>
+                        <span class="circle green"></span>
+                    </div>
+                    <div class="bar-title"><i class="fa-solid fa-lock"></i> secure-powerbi-workspace.embed.html</div>
+                    <div class="bar-reload"><i class="fa-solid fa-arrows-rotate"></i></div>
+                </div>
+                
+                <!-- Power BI Live Iframe Embed Wrapper -->
+                <div class="iframe-container" id="iframeContainer">
+                    <!-- Placeholder visible until the user inserts their actual publish link -->
+                    <div class="iframe-placeholder" id="placeholder">
+                        <div class="placeholder-content">
+                            <i class="fa-solid fa-chart-line placeholder-icon animate-bounce"></i>
+                            <h3>Live Embed Connection Required</h3>
+                            <p>To view your live Power BI data, publish your <code>Uber.pbix</code> file to Power BI Service and paste your <strong>Publish to Web</strong> link below.</p>
+                            
+                            <div class="embed-instructions-box">
+                                <h4><i class="fa-solid fa-info-circle"></i> Quick Step-by-Step Hosting:</h4>
+                                <ol>
+                                    <li>Open <code>Uber.pbix</code> in Power BI Desktop and hit <strong>Publish</strong>.</li>
+                                    <li>In Power BI Service online, open the report, click <strong>File &rarr; Embed report &rarr; Publish to web (public)</strong>.</li>
+                                    <li>Copy the generated <code>https://app.powerbi.com/view...</code> link.</li>
+                                    <li>Paste it in the input below to see it live instantly on this webpage!</li>
+                                </ol>
+                            </div>
+                            
+                            <div class="url-input-group">
+                                <input type="text" id="powerBiUrl" placeholder="Paste your app.powerbi.com/view... URL here" class="url-input">
+                                <button onclick="embedDashboard()" class="btn-embed"><i class="fa-solid fa-cloud-arrow-up"></i> Load Live Dashboard</button>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe id="powerBiIframe" src="" frameborder="0" allowFullScreen="true" style="display: none;"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Insights & Dynamic Analytics Section -->
+    <section id="insights" class="insights-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Data Analysis Findings</span>
+                <h2>Executive Strategic Dashboard Report</h2>
+                <p>Core programmatic findings and analytical splits extracted from the 150,000 records of historical transactional logs.</p>
+            </div>
+
+            <div class="insights-grid">
+                <!-- Insight Card 1 -->
+                <div class="insight-card glass">
+                    <div class="insight-header">
+                        <i class="fa-solid fa-ban insight-icon icon-red"></i>
+                        <h3>Cancellation Root-Cause Analysis</h3>
+                    </div>
+                    <p>The system experiences a **18.0% (27,000)** driver cancellation rate and a **7.0% (10,500)** customer cancellation rate. Out of all customer-side cancellations, <strong>Wrong Address Input (2,362)</strong> and <strong>Change of plans (2,353)</strong> are the leading causes.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-info">
+                            <span>Driver Cancellation Rate</span>
+                            <span>18.0%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress fill-red" style="width: 18%"></div></div>
+                    </div>
+                </div>
+
+                <!-- Insight Card 2 -->
+                <div class="insight-card glass">
+                    <div class="insight-header">
+                        <i class="fa-solid fa-car insight-icon icon-yellow"></i>
+                        <h3>Fleet & Vehicle Performance</h3>
+                    </div>
+                    <p>Fleets are heavily dominated by <strong>Autos (37,419 bookings)</strong> and <strong>Go Mini Hatchbacks (29,806 bookings)</strong>, representing **44.8%** of total ride demands. High-end Uber XL SUVs account for **3%** of volume but command higher ticket margins.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-info">
+                            <span>Auto & Go Mini Share</span>
+                            <span>44.8%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress fill-yellow" style="width: 44.8%"></div></div>
+                    </div>
+                </div>
+
+                <!-- Insight Card 3 -->
+                <div class="insight-card glass">
+                    <div class="insight-header">
+                        <i class="fa-solid fa-wallet insight-icon icon-green"></i>
+                        <h3>Payment System Integration</h3>
+                    </div>
+                    <p>Digital finance adoption is led by **UPI payments (45,909 transactions)** which accounts for **45%** of all generated payments. Cash remains a strong secondary channel at **24.9%**, while debit/credit cards lag behind at under **18.1%**.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-info">
+                            <span>UPI Digital Payments Share</span>
+                            <span>45.0%</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress fill-green" style="width: 45%"></div></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="recommendations-box glass">
+                <h3><i class="fa-solid fa-lightbulb"></i> Actionable Business Recommendations</h3>
+                <div class="recs-grid">
+                    <div class="rec-item">
+                        <div class="rec-number">1</div>
+                        <div>
+                            <h4>Address Map Address Pin Inaccuracy</h4>
+                            <p>Introduce double-confirmation overlays in the rider app to reduce the <strong>2,362 cancellations</strong> triggered due to "Wrong Address" inputs.</p>
+                        </div>
+                    </div>
+                    <div class="rec-item">
+                        <div class="rec-number">2</div>
+                        <div>
+                            <h4>Introduce Fleet Reliability Inspections</h4>
+                            <p>Mitigate the <strong>3,012 mid-trip vehicle breakdowns</strong> (representing 33.5% of incomplete rides) by launching seasonal maintenance verification programs for driver partners.</p>
+                        </div>
+                    </div>
+                    <div class="rec-item">
+                        <div class="rec-number">3</div>
+                        <div>
+                            <h4>Targeted Wallet Settlement Cashback</h4>
+                            <p>Offer a 5% discount/cashback when riders top-up and use their closed-loop **Uber Wallet** (currently at 12%), reducing transactional fee overheads.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema & Technical Specification Section -->
+    <section id="schema" class="schema-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Data Schema Architecture</span>
+                <h2>Data Model & Dimension Mapping</h2>
+                <p>This project uses a clean, relational star schema model built on top of a central Fact table representing transactional bookings linked to Dimension maps.</p>
+            </div>
+
+            <div class="schema-grid">
+                <div class="schema-code glass">
+                    <div class="code-header">
+                        <span><i class="fa-solid fa-code"></i> star_schema_model.sql</span>
+                        <span class="code-lang">DAX / SQL</span>
+                    </div>
+                    <pre><code><span class="keyword">CREATE TABLE</span> FactBookings (
+    Booking_ID <span class="type">VARCHAR(50)</span> <span class="key">PRIMARY KEY</span>,
+    Booking_Status <span class="type">VARCHAR(50)</span> <span class="key">FOREIGN KEY</span>,
+    Vehicle_Type <span class="type">VARCHAR(50)</span> <span class="key">FOREIGN KEY</span>,
+    Pickup_Location <span class="type">VARCHAR(100)</span>,
+    Drop_Location <span class="type">VARCHAR(100)</span>,
+    Booking_Value <span class="type">DECIMAL(10,2)</span>,
+    Ride_Distance <span class="type">DECIMAL(10,2)</span>,
+    Driver_Ratings <span class="type">DECIMAL(3,2)</span>,
+    Customer_Rating <span class="type">DECIMAL(3,2)</span>,
+    Payment_Method <span class="type">VARCHAR(50)</span>
+);
+
+<span class="comment">-- Linked via active relationships to dimension catalogs</span>
+<span class="keyword">CREATE TABLE</span> DimVehicles (
+    Vehicle_Type <span class="type">VARCHAR(50)</span> <span class="key">PRIMARY KEY</span>,
+    Img_URL <span class="type">TEXT</span>
+);</code></pre>
+                </div>
+
+                <div class="schema-details">
+                    <div class="dim-map glass">
+                        <h4><i class="fa-solid fa-truck-pickup"></i> Fleet Dimensions & Active Image Mappings</h4>
+                        <ul class="dim-list">
+                            <li><span><i class="fa-solid fa-taxi"></i> Auto:</span> <code>https://i.ibb.co/39Zm6JcF/Tuk-Tuk-Green-v1.png</code></li>
+                            <li><span><i class="fa-solid fa-car-side"></i> Go Mini:</span> <code>https://i.ibb.co/B2sWkJzR/Hatchback.png</code></li>
+                            <li><span><i class="fa-solid fa-car-rear"></i> Go Sedan:</span> <code>https://i.ibb.co/WpfYqxSP/UberX-v1.png</code></li>
+                            <li><span><i class="fa-solid fa-motorcycle"></i> Bike:</span> <code>https://i.ibb.co/Ndc1B9c9/Uber-Moto-India1.png</code></li>
+                            <li><span><i class="fa-solid fa-car-on"></i> Premier Sedan:</span> <code>https://i.ibb.co/s9y03J93/Comfort.png</code></li>
+                            <li><span><i class="fa-solid fa-truck-monster"></i> Uber XL:</span> <code>https://i.ibb.co/spLvhZgP/HCV-v1.png</code></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Files Section -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="download-box glass">
+                <h2>Ready to explore the underlying project assets?</h2>
+                <p>Download the fully-modeled <code>Uber.pbix</code> report, inspect the raw dataset logs inside <code>uber.xlsx</code>, or read the full markdown document detailing business objectives.</p>
+                <div class="download-buttons">
+                    <a href="../Uber.pbix" download class="btn-primary btn-large"><i class="fa-solid fa-file-chart-pie"></i> Download .PBIX Report File</a>
+                    <a href="../Dataset/uber.xlsx" download class="btn-secondary btn-large"><i class="fa-solid fa-file-excel"></i> Download Raw Dataset</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Uber BI Analytics Project. Custom-tailored portfolio engineered for Recruiters & Executives.</p>
+                <div class="footer-links">
+                    <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="mailto:your-email@example.com"><i class="fa-solid fa-envelope"></i> Contact Dev</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Embedded Power BI Script -->
+    <script>
+        // Check if there is an embed URL already stored in local storage
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedUrl = localStorage.getItem('powerBiEmbedUrl');
+            if (savedUrl) {
+                document.getElementById('powerBiUrl').value = savedUrl;
+                loadDashboard(savedUrl);
+            }
+        });
+
+        function embedDashboard() {
+            const urlInput = document.getElementById('powerBiUrl').value.trim();
+            if (!urlInput) {
+                alert("Please paste a valid Power BI Embed URL first!");
+                return;
+            }
+            if (!urlInput.includes("app.powerbi.com")) {
+                alert("This doesn't look like a standard Power BI Publish to Web URL. Please ensure it contains 'app.powerbi.com/view'!");
+                return;
+            }
+            localStorage.setItem('powerBiEmbedUrl', urlInput);
+            loadDashboard(urlInput);
+        }
+
+        function loadDashboard(url) {
+            const iframe = document.getElementById('powerBiIframe');
+            const placeholder = document.getElementById('placeholder');
+            
+            iframe.src = url;
+            placeholder.style.display = 'none';
+            iframe.style.display = 'block';
+        }
+
+        // Mobile Nav Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileToggle.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.className = 'fa-solid fa-xmark';
+            } else {
+                icon.className = 'fa-solid fa-bars';
+            }
+        });
+    </script>
+</body>
+</html>
