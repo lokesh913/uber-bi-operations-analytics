@@ -1,4 +1,4 @@
-<img width="1484" height="837" alt="image" src="https://github.com/user-attachments/assets/75a16f21-8ad2-4f0c-8c46-2580bf7c27fe" /># 🚖 Uber BI Analytics Project: Interactive Operational & Revenue Dashboard
+# 🚖 Uber BI Analytics Project: Interactive Operational & Revenue Dashboard
 
 [![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![Excel Data](https://img.shields.io/badge/Dataset-Excel_xlsx-217346?style=flat-square&logo=microsoftexcel&logoColor=white)](./Dataset/uber.xlsx)
