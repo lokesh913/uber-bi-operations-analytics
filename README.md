@@ -1,4 +1,4 @@
-# 🚖 Uber BI Analytics Project: Interactive Operational & Revenue Dashboard
+<img width="1484" height="837" alt="image" src="https://github.com/user-attachments/assets/75a16f21-8ad2-4f0c-8c46-2580bf7c27fe" /># 🚖 Uber BI Analytics Project: Interactive Operational & Revenue Dashboard
 
 [![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![Excel Data](https://img.shields.io/badge/Dataset-Excel_xlsx-217346?style=flat-square&logo=microsoftexcel&logoColor=white)](./Dataset/uber.xlsx)
@@ -8,9 +8,13 @@
 Welcome to the **Uber BI Analytics Project**! This repository hosts a comprehensive, production-grade Power BI dashboard built to analyze, monitor, and optimize Uber's ride-booking operations, financial performance, customer behaviors, driver ratings, and geographical trends. 
 
 Powered by a robust dataset of **150,000 bookings** spanning the year 2025, this interactive report empowers operational managers and business analysts to uncover operational bottlenecks, maximize ride completion rates, investigate cancellations, and optimize revenue streams.
-<img width="800" height="458" alt="image" src="https://github.com/user-attachments/assets/c554b37b-ab5a-4017-aab3-14e5d7661b6d" />
+<img width="1000" height="458" alt="image" src="https://github.com/user-attachments/assets/c554b37b-ab5a-4017-aab3-14e5d7661b6d" />
+<img width="1000" height="458" alt="image" src="https://github.com/user-attachments/assets/73d6fe25-1a8f-40cf-85dc-3486fd34bad0" />
+<img width="1000" height="458" alt="image" src="https://github.com/user-attachments/assets/45fea2f0-da39-437d-ba52-fc20c26b152b" />
+<img width="1000" height="458" alt="image" src="https://github.com/user-attachments/assets/eb4f2d7b-6e08-4d93-9319-abe6ef0e442a" />
+<img width="1000" height="458" alt="image" src="https://github.com/user-attachments/assets/b481792e-8fb6-4f47-a083-39cafcc74330" />
+<img width="1000" height="458" alt="image" src="https://github.com/user-attachments/assets/b5d42392-473f-469e-a2cc-ef46c41dfa97" />
 
-<img width="800" height="458" alt="image" src="https://github.com/user-attachments/assets/b481792e-8fb6-4f47-a083-39cafcc74330" />
 
 
 ---
