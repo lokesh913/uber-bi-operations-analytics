@@ -8,7 +8,9 @@
 Welcome to the **Uber BI Analytics Project**! This repository hosts a comprehensive, production-grade Power BI dashboard built to analyze, monitor, and optimize Uber's ride-booking operations, financial performance, customer behaviors, driver ratings, and geographical trends. 
 
 Powered by a robust dataset of **150,000 bookings** spanning the year 2025, this interactive report empowers operational managers and business analysts to uncover operational bottlenecks, maximize ride completion rates, investigate cancellations, and optimize revenue streams.
-<img width="1590" height="942" alt="image" src="https://github.com/user-attachments/assets/b481792e-8fb6-4f47-a083-39cafcc74330" />
+<img width="800" height="458" alt="image" src="https://github.com/user-attachments/assets/c554b37b-ab5a-4017-aab3-14e5d7661b6d" />
+
+<img width="800" height="458" alt="image" src="https://github.com/user-attachments/assets/b481792e-8fb6-4f47-a083-39cafcc74330" />
 
 
 ---
